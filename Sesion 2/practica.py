@@ -1,3 +1,3 @@
-c=10
+c = 10
 if c == 10:
     print(type(c))
