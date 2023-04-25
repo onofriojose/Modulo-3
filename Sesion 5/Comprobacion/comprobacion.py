@@ -1,4 +1,3 @@
-
 factorial = 1
 i = 1
 while True:

@@ -5,5 +5,3 @@ if var1 > 0 and var2 > 0 and var3 > 0:
     print("Todos los números son positivos")
 elif var1 > 0 or var2 > 0 or var3 > 0:
     print("Alguna de las variables es positiva")
-else:
-    print("No todos los números son positivos")
