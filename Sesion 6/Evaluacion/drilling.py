@@ -5,7 +5,10 @@ Sentencias condicionales.
 EJERCICIO
 Se requiere contar con un programa que, dados 3 números diferentes, los evalúe y entregue el
 orden de mayor a menor.
+
 '''
+
+
 a = int(input("Ingrese primer número: "))
 b = int(input("Ingrese segundo número: "))
 c = int(input("Ingrese tercer número: "))
@@ -33,3 +36,31 @@ else:
     else:
         print(b)
         print(a)
+
+"""
+a = int(input("Ingrese primer número: "))
+b = int(input("Ingrese segundo número: "))
+c = int(input("Ingrese tercer número: "))
+
+lista_numeros = [a, b, c]
+ordenados = sorted(lista_numeros, reverse=True)
+
+print("El orden de mayor a menor es:")
+for numero in ordenados:
+    print(numero)
+    
+En este código, se crea una lista llamada lista_numeros que contiene los 3 números ingresados por el usuario. Luego, se utiliza la función sorted() para ordenar los números en orden descendente y se almacena en una nueva lista llamada ordenados. Finalmente, se recorre la lista ordenados con un ciclo for e imprime cada número en orden de mayor a menor.
+"""
+'''
+a = int(input("Ingrese primer número: "))
+b = int(input("Ingrese segundo número: "))
+c = int(input("Ingrese tercer número: "))
+
+lista_numeros = [a, b, c]
+setDeNumeros = set(lista_numeros)
+ordenados = list(setDeNumeros)
+
+print("El orden de menor a mayor es:")
+for numero in ordenados:
+    print(numero)
+'''

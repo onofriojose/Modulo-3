@@ -1,12 +1,15 @@
-r1 = float(input("Ingrese la Resistencia 1 : "))
+r1 = input("Ingresa el valor de la resistencia 1: ")
+r2 = input("Ingresa el valor de la resistencia 2: ")
+r3 = input("Ingresa el valor de la resistencia 3: ")
+r1 = float(r1)
+r2 = float(r2)
+r3= float(r3)
+if r1.isdigit() and r2.isdigit() and r3.isdigit():
 
-r2 = float(input("Ingrese la Resistencia 2 : "))
-
-r3 = float(input("Ingrese la Resistencia 3 : "))
-
-rT = (1/((1/r1)+(1/r2)+(1/r3)))
-
-
-
-
-print("La resistancia total es: {:.3f}".format(rT)) #print(f"La resistancia total es: {rT}") tambien funciona con el formato de la variable
+    if (r1 >= 0 or r2 >= 0 or r3 >= 0):
+        rt = 1 / ((1 / r1) + (1 / r2) + (1 / r3))
+        print(f"La resistencia total es: {rt:.2f}")
+    else:
+        print('los numeros deben ser positivos')
+else:
+    print("debe ingresar solo numeros")

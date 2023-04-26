@@ -1,7 +1,10 @@
 strNum = input("Ingresar numeros separados por espacios: ")
 try:
     listaNum = strNum.split()
+    tuplaNum = tuple(listaNum)
+    print(tuplaNum)
     setNum = set(listaNum)
+    print(setNum)
     listaNum = list(setNum)
 except ValueError:
     print("No es numero separado por espacio")
