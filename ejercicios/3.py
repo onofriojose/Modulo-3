@@ -9,3 +9,12 @@ if len(texto1) == len(texto2):
         print("Textos diferentes misma longitud")
 else:
     print("Textos diferentes")
+    
+'''
+if len(texto1) == len(texto2):
+    print("Textos del mismo tamaño")
+elif texto1 == texto2:
+    print("Textos iguales")
+else:
+    print("Textos diferentes")
+    '''

@@ -38,16 +38,19 @@ else:
         print(a)
 
 """
-a = int(input("Ingrese primer número: "))
-b = int(input("Ingrese segundo número: "))
-c = int(input("Ingrese tercer número: "))
-
+while True:
+    a = int(input("Ingrese primer número: "))
+    b = int(input("Ingrese segundo número: "))
+    c = int(input("Ingrese tercer número: "))
 lista_numeros = [a, b, c]
-ordenados = sorted(lista_numeros, reverse=True)
-
-print("El orden de mayor a menor es:")
-for numero in ordenados:
-    print(numero)
+if len(lista_numeros) < 3:
+    print("Debe ingresar numeros diferentes")
+else:
+    ordenados = sorted(lista_numeros, reverse=True)
+    print("El orden de mayor a menor es:")
+    for numero in ordenados:
+        print(numero)
+    break
     
 En este código, se crea una lista llamada lista_numeros que contiene los 3 números ingresados por el usuario. Luego, se utiliza la función sorted() para ordenar los números en orden descendente y se almacena en una nueva lista llamada ordenados. Finalmente, se recorre la lista ordenados con un ciclo for e imprime cada número en orden de mayor a menor.
 """

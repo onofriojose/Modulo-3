@@ -6,7 +6,7 @@ r2 = float(r2)
 r3= float(r3)
 if r1.isdigit() and r2.isdigit() and r3.isdigit():
 
-    if (r1 >= 0 or r2 >= 0 or r3 >= 0):
+    if (r1 > 0 and r2 > 0 and r3 > 0):
         rt = 1 / ((1 / r1) + (1 / r2) + (1 / r3))
         print(f"La resistencia total es: {rt:.2f}")
     else:

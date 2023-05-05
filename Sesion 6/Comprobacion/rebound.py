@@ -9,12 +9,12 @@ subcondiciones; en su lugar, usar condiciones anidadas.'''
 
 num = int(input('Ingrese un número: '))
 if num > 0:
-    if num % 2 == 0:
+    if num % 2 == 0:#modulo
         print('El número positivo es par')
     else:
         print('El número positivo es impar')
 elif num < 0:
-    if num % 2 == 0:
+    if num % 2 == 0:#modulo
         print('El número negativo es par')
     else:
         print('El número negativo es impar')

@@ -1,5 +1,7 @@
 '''Realizar la ejecución de un menú utilizando el lenguaje Python, donde se le indiquen varias opciones a seleccionar por el usuario y una opción para salir del menú.
 Utilizar ciclos y estructuras condicionales.'''
+#importar libreria de expresiones regulares
+
 opcion = ''
 while opcion != "5":
     #impresion del menú
