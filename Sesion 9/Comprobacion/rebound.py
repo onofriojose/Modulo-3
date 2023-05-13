@@ -6,7 +6,9 @@ resultados en una tupla. Los resultados se deben imprimir en pantalla.
 '''
 
 def operaciones(lista2):
-    lista2 = [int(i) for i in lista2]#convertir los elementos de la lista a enteros
+    lista = lista2.split()
+    lista2 = lista
+    lista2 = [int(i) for i in lista2 ]#convertir los elementos de la lista a enteros
     suma = 0
     for i in lista2:
         suma = suma+i
@@ -14,6 +16,5 @@ def operaciones(lista2):
     return suma, resta
 
 lista_numeros = input("Ingrese los números separados por espacios: ")
-lista = lista_numeros.split()
-resultado = operaciones(lista)
+resultado = operaciones(lista_numeros)
 print(resultado)
